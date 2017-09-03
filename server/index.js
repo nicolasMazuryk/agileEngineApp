@@ -30,6 +30,7 @@ log && app.use(morgan('tiny'))
 app.use('/api/v1', api)
 app.use(express.static('public'))
 app.use(errorHandler)
+
 app.listen(port, domain, (err) => {
   if (err) {
     console.log(err)
